@@ -15,13 +15,13 @@ def bmicalculator():
     
     bmi=weight/(height/100)**2
     
-    bmi_output=[(16, 'Severely underweight'), (18.5, 'Underweight'),
+    bmi_output=[(16, 'Extremely underweight'), (18.5, 'Underweight'),
                   (25, 'Normal'), (30, 'Overweight'),
-                  (35, 'Moderately obese'), (float('inf'), 'Severely obese')]
+                  (35, 'Moderately obese'), (float('inf'), 'Extremely obese')]
     
     for tuple1,tuple2 in bmi_output:
         if bmi<=tuple1:
-            put_text('Your BMI is :%.1f and the person is :%s'%(bmi,tuple2))
+            put_text('Your BMI is :%.1f and you are: %s'%(bmi,tuple2))
             break
         
     
