@@ -10,12 +10,12 @@ from pywebio.input import *
 from pywebio.output import *
 
 def bmicalculator():
-    height=input("Please enter the height in cm",type=FLOAT)
-    weight=input("Please enter the weight in Kg",type=FLOAT)
+    height=input("Please enter your height in cm",type=FLOAT)
+    weight=input("Please enter your weight in Kg",type=FLOAT)
     
     bmi=weight/(height/100)**2
     
-    bmi_output=[(16, 'Extremely underweight'), (18.5, 'Underweight'),
+    bmi_output=[(16, 'Unhealthy weight'), (18.5, 'Underweight'),
                   (25, 'Normal'), (30, 'Overweight'),
                   (35, 'Moderately obese'), (float('inf'), 'Extremely obese')]
     
